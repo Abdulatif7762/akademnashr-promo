@@ -1,6 +1,15 @@
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: "Roboto", "Arial", sans-serif;
+    letter-spacing: 0.5px;
+}
+
+
 .header-site {
     background-color: #ffffff;
 }
+
 
 .site-nav {
     font-weight: 500;
