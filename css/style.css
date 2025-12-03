@@ -5,6 +5,11 @@ body {
     letter-spacing: 0.5px;
 }
 
+*:focus {
+    outline: solid 2px #FF7500;
+    outline-offset: 3px;
+}
+
 .header-site {
     display: flex;
     justify-content: space-between;
@@ -208,7 +213,7 @@ body {
     color: #FF7500;
 }
 
-.site-footer-links a:focus {
+.site-footer-links a:active {
     opacity: 0.6;
 }
 
