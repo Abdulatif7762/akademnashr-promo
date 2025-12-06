@@ -11,6 +11,9 @@ body {
 }
 
 .header-site {
+    border-top: #FF7500 solid 5px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,6 +23,7 @@ body {
 .site-nav-socials {
     display: flex;
     align-items: center;
+    padding: 0;
 }
 
 
@@ -52,6 +56,7 @@ body {
     color: #000;
     transition: color 0.4s ease,
     opacity 0.2s ease;
+
 }
 
 .site-nav:hover {
@@ -63,6 +68,11 @@ body {
 }
 
 .hero-site {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px; 
     background-color: #252420;
     color: #fff;
 }
@@ -70,9 +80,14 @@ body {
 .site-feature {
     background-color: #fff;
     color: #000;
+    padding: 0;
 }
 
 .main-button {
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 4px;
+    padding: 12px 24px;
     font-size: 13px;
     line-height: 15px;
     background-color: #FF7500;
@@ -108,8 +123,16 @@ body {
     letter-spacing: 0.5px;
 }
 
+.site-feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding-top: 210px;
+    padding-bottom: 210px;
+}
 
 .orange-line {
+    border: none;
     width: 80px;
     height: 2px;
     background-color: #FF7500;
@@ -124,6 +147,7 @@ body {
 
 .feature {
     width: 345px;   
+
 }
 
 
@@ -139,6 +163,7 @@ body {
 }
 
 .promo {
+    border-radius: 12px;
     background-color: #252420;
     color: #fff;
 }
@@ -164,6 +189,8 @@ body {
     width: 440px;
     height: 440px;
     object-fit: cover;
+    border-radius: 12px;
+    object-position: right center;
 }
 
 .logo-link:hover {
@@ -178,9 +205,16 @@ body {
     list-style: none;
 }
 
+.site-footer {
+    padding-top: 56px;
+    padding-bottom: 56px;
+    background-color: #f8f8f8;
+}
+
 .site-footer-socials {
     text-decoration: none;
     color: #252420;
+    padding: 0;
 }
 
 .site-footer-socials:hover {
@@ -204,6 +238,7 @@ body {
 }
 
 .site-footer-links a {
+    padding: 0;
     font-size: 16px;
     line-height: 19px;
     color: #252420;
@@ -218,6 +253,7 @@ body {
 }
 
 .site-footer-divider {
+    border: 0;
     height: 2px;
     background-color: rgba(37, 36, 32, 0.5);
 }
