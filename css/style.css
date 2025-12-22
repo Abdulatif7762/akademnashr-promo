@@ -1,22 +1,43 @@
+* { 
+    box-sizing: border-box;
+} 
+
+
 body {
+    padding: 0;
+    margin: 0;
     font-size: 16px;
     line-height: 1.5;
     font-family: "Roboto", "Arial", sans-serif;
     letter-spacing: 0.5px;
 }
 
+
 *:focus {
     outline: solid 2px #FF7500;
     outline-offset: 3px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.site-header-contariner {
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
 }
 
 .header-site {
     border-top: #FF7500 solid 5px;
     padding-top: 16px;
     padding-bottom: 16px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    
     background-color: #fff;
 }
 
@@ -26,11 +47,18 @@ body {
     padding: 0;
 }
 
-.site-nav-lists {
+.site-nav-list {
+    padding-left: 100px;
     display: flex;
-    padding: 0;
+    
     list-style: none;
     margin: 0;
+}
+
+.site-nav-list {
+    display: flex;
+    align-items: center;
+    gap: 24px; /* orasida joy */
 }
 
 .sitnav-item {
@@ -79,15 +107,24 @@ body {
 }
 
 .hero-site {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding-top: 80px;
     padding-bottom: 80px; 
     background-color: #252420;
     color: #fff;
     margin-top: 0;
     margin-bottom: 24px;
+}
+
+.feature-wrapper{
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+
+.hero-container {
+   display: flex;
+    justify-content: space-between;
+    align-items: center; 
 }
 
 .site-feature {
@@ -128,7 +165,7 @@ body {
     font-size: 40px;
     line-height: 1.2;
     letter-spacing: 0.5px;
-
+    
 }
 
 .phyt-text{
@@ -141,6 +178,11 @@ body {
     line-height: 1.5;
     letter-spacing: 0.5px;
 }
+
+.feature-info{
+    margin: 0;
+}
+
 
 .site-feature {
     gap: 15px;
@@ -195,11 +237,18 @@ body {
     letter-spacing: 0.5px;
 }
 
-.promo {
+
+
+.promo-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 64px;
     border-radius: 12px;
     background-color: #252420;
     color: #fff;
 }
+
 .promo-content {
     width: 440px;
 }
@@ -255,21 +304,19 @@ body {
 
 .site-footer-socials {
     margin-right: 16px;
-    display: block;
+    
 }
 
-.site-footer-socials svg {
-    display: block;
-}
+
 
 .site-footer-socials:hover {
     color: #FF7500;
 } 
 
 .site-footer-socials:active {
-   opacity: 0.6;
+    opacity: 0.6;
 } 
-    
+
 .site-footer-social:active {
     opacity: 0.6;
 }
@@ -277,6 +324,14 @@ body {
 .site-footer-links a {
     text-decoration: none;
 }
+
+.site-footer-links li {
+margin-bottom: 16px;
+}
+
+.site-footer-links li:last-child  {
+   margin-bottom: 0; 
+} 
 
 .site-footer-links {
     width: 224px;
@@ -288,7 +343,10 @@ body {
     flex-wrap: wrap;    /* kichik ekranlarda pastga tushishi uchun */
 }
 
-
+.siter-footer-logos {
+    display: flex;
+    justify-content: flex-end;
+}
 
 .site-footer-links a {
     display: flex;
